@@ -11,7 +11,14 @@
 	bottom: 0;
 	border-radius: 6px;
 	border: 1px solid var(--very-light-pink);
+	position: fixed;
+	transition: 1s ease;
+	animation: swipeLeft 1s forwards;
 }
+@keyframes swipeLeft {
+	100% {transform: translatex(-360px);}
+}
+
 .title-container {
 	display: flex;
 }
